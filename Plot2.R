@@ -1,0 +1,6 @@
+setwd("C:/Users/danielsw/OneDrive/Data Science Specialization/ExData_Plotting1")
+source("ReadData.R")
+Data <- ReadData("household_power_consumption.txt")
+png(filename = "plot2.png", width = 480, height = 480)
+plot(Data$DateTime, Data$Global_active_power,  ylab = "Global Active Power (kilowatts)", xlab = "", type = "l")
+dev.off()
